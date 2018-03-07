@@ -1,0 +1,1 @@
+Copy and paste them into FusionCMS directory.

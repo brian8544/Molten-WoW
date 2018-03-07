@@ -1,0 +1,19 @@
+{
+	"name": "Molten-WoW Theme for FusionCMS",
+	"author": "Shadow",
+	"website": "https://emucoach.com",
+	
+	"favicon": "favicon.ico",
+	
+	"normal_avatar": "avatars/0_normal.jpg",
+	"small_avatar": "avatars/0_small.jpg",
+	
+	"slider_text": {
+		"next": "",
+		"previous": ""
+	},
+	
+	"slider_id": "slider_container",
+	"screenshot": "images/screenshot.jpg",
+	"blank_header": ""
+}

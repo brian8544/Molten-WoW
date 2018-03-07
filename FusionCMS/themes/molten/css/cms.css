@@ -1,0 +1,477 @@
+/*
+	@Theme Name  : Molten
+	@Theme URI   : Unknown
+	@Author      : E. Darksider
+	@Author URI  : http://code-path.com/author/darksider/
+	@Description : to be written
+	@Version     : 1.0
+	@License     : Proprietary software License
+	@License URI : https://en.wikipedia.org/wiki/Proprietary_software
+*/
+
+@charset "utf-8";
+
+/* Modal box
+/*----------------------------------------------------------*/
+.popup {
+	border: 1px solid #fff;
+	box-shadow: 0 0 35px #000;
+	-moz-box-shadow: 0 0 35px #000;
+	-webkit-box-shadow: 0 0 35px #000;
+	background-color: #eee;
+}
+
+.popup a {
+	color: #fff;
+}
+
+.popup a:hover {
+	color: #fff;
+}
+
+.popup_button {
+	border: 1px solid #63a62f;
+	border-bottom: 1px solid #5b992b;
+	box-shadow: inset 0 1px 0 0 #96ca6d;
+	-moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+	-webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+	text-shadow: 0 -1px 0 #4c9021;
+	background-color: #7fbf4d;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+	background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: linear-gradient(top, #7fbf4d, #63a62f);
+}
+
+.popup_button:hover {
+	box-shadow: inset 0 1px 0 0 #8dbf67;
+	-moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+	-webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+	background-color: #76b347;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+	background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: linear-gradient(top, #76b347, #5e9e2e);
+}
+
+.popup_button:active {
+	border: 1px solid #5b992b;
+	border-bottom: 1px solid #538c27;
+	box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+	-moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+	-webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+}
+
+.popup_hide {
+	border: 1px solid #9a9a9a;
+	border-bottom: 1px solid #9a9a9a;
+	box-shadow: inset 0 1px 0 0 #cbcbcb;
+	-moz-box-shadow: inset 0 1px 0 0 #cbcbcb;
+	-webkit-box-shadow: inset 0 1px 0 0 #cbcbcb;
+	text-shadow: 0 -1px 0 #8f8f8f;
+	background-color: #bfbfbf;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bfbfbf), color-stop(100%, #9a9a9a));
+	background-image: -webkit-linear-gradient(top, #bfbfbf, #9a9a9a);
+	background-image: -moz-linear-gradient(top, #bfbfbf, #9a9a9a);
+	background-image: -ms-linear-gradient(top, #bfbfbf, #9a9a9a);
+	background-image: -o-linear-gradient(top, #bfbfbf, #9a9a9a);
+	background-image: linear-gradient(top, #bfbfbf, #9a9a9a);
+}
+
+.popup_hide:hover {
+	box-shadow: inset 0 1px 0 0 #bbbbbb;
+	-moz-box-shadow: inset 0 1px 0 0 #bbbbbb;
+	-webkit-box-shadow: inset 0 1px 0 0 #bbbbbb;
+	background-color: #adadad;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #adadad), color-stop(100%, #a0a0a0));
+	background-image: -webkit-linear-gradient(top, #adadad, #a0a0a0);
+	background-image: -moz-linear-gradient(top, #adadad, #a0a0a0);
+	background-image: -ms-linear-gradient(top, #adadad, #a0a0a0);
+	background-image: -o-linear-gradient(top, #adadad, #a0a0a0);
+	background-image: linear-gradient(top, #adadad, #a0a0a0);
+}
+
+.popup_hide:active {
+	border: 1px solid #a0a0a0;
+	border-bottom: 1px solid #8b8b8b;
+	box-shadow: inset 0 0 8px 4px #8c8c8c, 0 1px 0 0 #eeeeee;
+	-moz-box-shadow: inset 0 0 8px 4px #8c8c8c, 0 1px 0 0 #eeeeee;
+	-webkit-box-shadow: inset 0 0 8px 4px #8c8c8c, 0 1px 0 0 #eeeeee;
+}
+
+#popup_bg {
+	background-color: #000;
+}
+
+/* Tooltip
+/*----------------------------------------------------------*/
+#tooltip, 
+.tooltip {
+	color: #fff;
+	border: 1px solid #777777;
+	border-top: 1px solid #cfcfcf;
+	box-shadow: 0 0 3px #000;
+	-moz-box-shadow: 0 0 3px #000;
+	-webkit-box-shadow: 0 0 3px #000;
+	background-color: #070c21;
+	background-color: rgba(7, 12, 33, 0.9);
+}
+
+/* Label
+/*----------------------------------------------------------*/
+label {
+	color: #6E4A1D;
+	cursor: pointer;
+	padding: 0 1px;
+}
+
+/* Form fields
+/*----------------------------------------------------------*/
+input[type="radio"], 
+input[type="checkbox"] {
+	vertical-align: middle;
+}
+
+textarea, 
+select, 
+input[type="text"],
+input[type="password"],
+input[type="email"], 
+input[type="file"] {
+	color: #EFC9A0;
+	border: 1px #40220A solid;
+	padding: 1.5px 2px;
+	font-size: 13px;
+	background-color: #000;
+}
+
+textarea {
+	width: auto;
+	height: auto;
+	resize: none !important;
+	padding: 8px;
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	transition: all ease-in-out 300ms;
+	-o-transition: all ease-in-out 300ms;
+	-ms-transition: all ease-in-out 300ms;
+	-moz-transition: all ease-in-out 300ms;
+	-webkit-transition: all ease-in-out 300ms;
+}
+
+select {
+	width: 80%;
+	color: #6E4A1D;
+	margin: 5px;
+	cursor: pointer;
+	padding: 3px 2px;
+	font-size: 11px;
+	text-align: left;
+	font-weight: 700;
+	text-indent: 0.01px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	
+	text-overflow: "";
+	
+	/* Removes Default style */
+	-o-appearance: none;
+	/* Removes Default style */
+	-khtml-appearance: none;
+	/* Removes Default Firefox style */
+	-moz-appearance: none;
+	/*Removes default chrome and safari style */
+	-webkit-appearance: none;
+	/* Removes default arrow from firefox */
+	
+	background-image: url(../images/misc/select_arrow.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	transition: box-shadow ease-in-out 300ms;
+	-o-transition: box-shadow ease-in-out 300ms;
+	-ms-transition: box-shadow ease-in-out 300ms;
+	-moz-transition: box-shadow ease-in-out 300ms;
+	-webkit-transition: box-shadow ease-in-out 300ms;
+}
+
+/* Removes default arrow from IE */
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+	background-position: 100% 100%;
+}
+
+select option, 
+select optgroup {
+	text-transform: capitalize;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="file"] {
+	width: 80%;
+	margin: 5px;
+}
+
+/* Autofill style */
+input:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0 9999px #000;
+	-webkit-text-fill-color: #EFC9A0;
+}
+
+input:-webkit-autofill:focus {
+	-webkit-box-shadow: inset 0 0 0 9999px #000;
+	-webkit-text-fill-color: #EFC9A0;
+}
+
+*:input-placeholder          { color: #EFC9A0; }
+*:-o-input-placeholder       { color: #EFC9A0; }
+*:-ms-input-placeholder      { color: #EFC9A0; }
+*:-moz-placeholder           { color: #EFC9A0; }
+*::-webkit-input-placeholder { color: #EFC9A0; }
+
+/* Full-page styles (log in, register etc)
+/*----------------------------------------------------------*/
+.page_form input[type="submit"] {
+	margin-top: 20px;
+}
+
+/* First column in the #ucp_info
+/*----------------------------------------------------------*/
+#ucp_info aside:first-child {
+	border-right: 1px solid #30220A;
+}
+
+#ucp_info aside:nth-child(3) {
+	border-left: 1px solid #30220A;
+}
+
+#ucp_info aside:last-child {
+	border-right: none !important;
+}
+
+/* Second <td> of each row
+/*----------------------------------------------------------*/
+#ucp_info td {
+	font-size: 10px;
+}
+
+#ucp_info td:nth-child(2) {
+	font-weight: bold;
+}
+
+/* Online players bar and realm bar (used on UCP, profiles)
+/*----------------------------------------------------------*/
+.online_realm_button, 
+#ucp_characters h1 {
+	width: 100%;
+	clear: both;
+	color: #766e64;
+	border: 1px #212120 solid;
+	border: 1px rgba(255, 255, 255, 0.02) solid;
+	padding: 15px;
+	font-size: 12px;
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	line-height: initial !important;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.7);
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	letter-spacing: 0;
+	background-color: #1E1E1D;
+	background-color: rgba(255, 255, 255, 0.05);
+	transition: color 400ms, box-shadow 400ms, background 400ms;
+	-o-transition: color 400ms, box-shadow 400ms, background 400ms;
+	-ms-transition: color 400ms, box-shadow 400ms, background 400ms;
+	-moz-transition: color 400ms, box-shadow 400ms, background 400ms;
+	-webkit-transition: color 400ms, box-shadow 400ms, background 400ms;
+}
+
+.online_realm_button:before, 
+#ucp_characters h1:before {
+	width: 100%;
+	height: 50%;
+	left: 0;
+	bottom: 0;
+	content: "";
+	position: absolute;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); /* IE6-9 */
+}
+
+.online_realm_button:hover, 
+#ucp_characters h1:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	background-color: #20201F;
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Table style, used on vote panel, donate panel, online players etc.
+/*----------------------------------------------------------*/
+.nice_table tr:first-child td {
+	color: #805025;
+	font-weight: normal;
+	border-bottom: 1px solid #30220A;
+}
+
+.nice_table tr:first-child td a {
+	color: #A07332;
+}
+
+.nice_table td {
+	vertical-align: middle;
+}
+
+/* FusionEditor WYSIWYG field
+/*----------------------------------------------------------*/
+.fusioneditor {
+	padding: 2px;
+	box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.24), 0 1px 0 rgba(255, 255, 255, 0.03);
+	-moz-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.24), 0 1px 0 rgba(255, 255, 255, 0.03);
+	-webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.24), 0 1px 0 rgba(255, 255, 255, 0.03);
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-color: #0B0B0B;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+.fusioneditor .fusioneditor_tools {
+	zoom: 1;
+	color: #3D4346;
+	border: none;
+	overflow: hidden;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.24), inset 0 0 0 1px rgba(255, 255, 255, 0.01), inset 0 -1px 0 rgba(255, 255, 255, 0.02);
+	-moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.24), inset 0 0 0 1px rgba(255, 255, 255, 0.01), inset 0 -1px 0 rgba(255, 255, 255, 0.02);
+	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.24), inset 0 0 0 1px rgba(255, 255, 255, 0.01), inset 0 -1px 0 rgba(255, 255, 255, 0.02);
+	line-height: 0;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: transparent;
+	background-image: url(../images/misc/bar-bg.png);
+	background-repeat: repeat;
+	background-position: top left;
+}
+
+.fusioneditor .fusioneditor_tools a {
+	zoom: 1;
+	border: none !important;
+	overflow: hidden;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 1px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #262521;
+	background-color: rgba(155, 150, 137, 0.08);
+	transition: all 0ms;
+	-o-transition: all 0ms;
+	-ms-transition: all 0ms;
+	-moz-transition: all 0ms;
+	-webkit-transition: all 0ms;
+}
+
+.fusioneditor .fusioneditor_tools a:hover {
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 1px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 1px 1px rgba(0, 0, 0, 0.3);
+	background-color: #161614;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fusioneditor .fusioneditor_tools a:active {
+	background-color: #161614;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fusioneditor .fusioneditor_field {
+	color: #E5E4E4;
+	border: 0 !important;
+	margin: 5px;
+	resize: none;
+	cursor: text;
+	padding: 0;
+	font-size: 13px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	background-color: transparent;
+}
+
+.fusioneditor .fusioneditor_field b {
+	font-weight: bold;
+}
+
+.fusioneditor .fusioneditor_toolbox {
+	border-top: #0B0B0B;
+	border-top: 2px rgba(0, 0, 0, 0.35) solid;
+}
+
+/* The pop up "autocomplete" box on private messages -> compose
+/*----------------------------------------------------------*/
+#pm_username_autocomplete {
+	width: 100% !important;
+	color: #a9a8a8;
+	border: none !important;
+	font-size: 12px;
+	box-shadow: 0 0 0 1px #000000, inset 0 0 8px 0 rgba(0, 0, 0, 0.4), 0 0 3px 0 rgba(255, 255, 255, 0.35), 0 3px 0 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 0 0 1px #000000, inset 0 0 8px 0 rgba(0, 0, 0, 0.4), 0 0 3px 0 rgba(255, 255, 255, 0.35), 0 3px 0 0 rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0 0 0 1px #000000, inset 0 0 8px 0 rgba(0, 0, 0, 0.4), 0 0 3px 0 rgba(255, 255, 255, 0.35), 0 3px 0 0 rgba(0, 0, 0, 0.75);
+	font-weight: bold;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.30), 0 2px 0 #000000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #131313 !important;
+}
+
+#pm_username_autocomplete a {
+	border: none !important;
+	box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.4), 0 0 1px 0 rgba(255, 213, 146, 0.4), 0 3px 0 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.4), 0 0 1px 0 rgba(255, 213, 146, 0.4), 0 3px 0 0 rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.4), 0 0 1px 0 rgba(255, 213, 146, 0.4), 0 3px 0 0 rgba(0, 0, 0, 0.75);
+	border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+}
+
+/* Armory
+/*----------------------------------------------------------*/
+#armory_top h1 {
+	color: #eee;
+}
+
+#armory_stats td {
+	font-size: 12px !important;
+}
+
+/* Avatar
+/*----------------------------------------------------------*/
+#avatar_page center {
+	color: #fff;
+}
